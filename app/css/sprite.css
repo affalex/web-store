@@ -16,33 +16,51 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-add-to-cart-ic {
+.icon-add-to-cart-hover-ic {
   background-image: url(../img/sprite.png);
   background-position: 0px -38px;
   width: 22px;
   height: 21px;
 }
+.icon-add-to-cart-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -22px -38px;
+  width: 22px;
+  height: 21px;
+}
 .icon-amex-ic {
   background-image: url(../img/sprite.png);
-  background-position: -27px -19px;
+  background-position: 0px -19px;
   width: 27px;
   height: 19px;
 }
 .icon-cart-hover-ic {
   background-image: url(../img/sprite.png);
+  background-position: -20px -59px;
+  width: 24px;
+  height: 17px;
+}
+.icon-cart-ic {
+  background-image: url(../img/sprite.png);
   background-position: -54px -19px;
   width: 24px;
   height: 17px;
 }
+.icon-like-hover-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -38px -80px;
+  width: 19px;
+  height: 16px;
+}
 .icon-like-ic {
   background-image: url(../img/sprite.png);
-  background-position: 0px -59px;
+  background-position: -19px -80px;
   width: 19px;
   height: 16px;
 }
 .icon-mail-ic {
   background-image: url(../img/sprite.png);
-  background-position: -19px -59px;
+  background-position: -81px -36px;
   width: 18px;
   height: 11px;
 }
@@ -60,31 +78,49 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-no-name-cart-2-ic {
   background-image: url(../img/sprite.png);
-  background-position: 0px -19px;
+  background-position: -27px -19px;
   width: 27px;
   height: 19px;
 }
 .icon-phone-book-ic {
   background-image: url(../img/sprite.png);
-  background-position: -81px 0px;
+  background-position: -81px -47px;
   width: 12px;
   height: 12px;
 }
-.icon-search-ic {
+.icon-search-hover-ic {
   background-image: url(../img/sprite.png);
-  background-position: -42px -38px;
+  background-position: -81px 0px;
   width: 18px;
   height: 18px;
 }
-.icon-share-ic {
+.icon-search-ic {
   background-image: url(../img/sprite.png);
-  background-position: -60px -38px;
+  background-position: -81px -18px;
+  width: 18px;
+  height: 18px;
+}
+.icon-share-ic-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -44px -59px;
   width: 19px;
   height: 17px;
 }
+.icon-share-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -80px;
+  width: 19px;
+  height: 17px;
+}
+.icon-user-hover-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -59px;
+  width: 20px;
+  height: 21px;
+}
 .icon-user-ic {
   background-image: url(../img/sprite.png);
-  background-position: -22px -38px;
+  background-position: -44px -38px;
   width: 20px;
   height: 21px;
 }
