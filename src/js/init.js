@@ -66,4 +66,16 @@ $( function() {
 
     })
 
+
+    // flexslider init
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails"
+        });
+    });
+
+    //formstayler init
+    $('.custom-number').styler();
+
 } );

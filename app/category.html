@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Web Store</title>
+    <title>Web Store Categories</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,7 +15,6 @@
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/et-line.css">
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
@@ -31,15 +30,12 @@
 <body>
 <!-- HEADER START -->
 <header>
-    <div class="top-header">
+    <div class="top-header white-bg">
         <div class="container">
             <div class="flex-container justify-sp-between">
                 <ul class="phones-list flex-container align-center">
-                    <li class="flex-container align-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com
-                    </li>
-                    <li class="flex-container align-center"><span class="custom-icon icon-phone-book-ic"></span>453 -
-                        5553 - 996
-                    </li>
+                    <li class="flex-container align-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com</li>
+                    <li class="flex-container align-center"><span class="custom-icon icon-phone-book-ic"></span>453 - 5553 - 996</li>
                 </ul>
                 <nav class="social-nav">
                     <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -50,20 +46,23 @@
             </div>
         </div>
     </div>
-    <div class="bottom-header">
+    <div class="bottom-header white-bg">
         <div class="container">
-            <div class="flex-container justify-sp-between">
+            <div class="flex-container justify-sp-between align-center">
                 <div class="logo">
-
+                    <a href=""><img src="img/logo.png" alt=""></a>
                 </div>
                 <nav class="header-nav">
-                    <!--bootstrap class labels-->
+                    <a href="">Home</a>
+                    <a href="product.html">Products</a>
+                    <a href="">Hot Deals</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
                 </nav>
                 <nav class="user-controls">
-                    <!--margin: auto-->
-                    <span></span>
-                    <span></span>
-                    <span><!--bootstrap class labels /// absolute--> </span>
+                    <a href=""><span class="custom-icon icon-search-ic"></span></a>
+                    <a href=""><span class="custom-icon icon-user-ic"></span></a>
+                    <a href=""><span class="custom-icon icon-cart-ic"><span class="basket-count">5</span></span></a>
                 </nav>
             </div>
         </div>
@@ -94,12 +93,16 @@
                                 <span>Categories</span>
                             </div>
                             <div class="range">
-
                                 <div id="slider-range"></div>
-
-                                <div class="range-info">
-                                    <label for="amount">Price range:</label>
-                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                <div class="add-range-value flex-container" >
+                                    <div class="range-input-reoup">
+                                        <label for="fromValue">From</label>
+                                        <input type="number" name="fromValue" id="fromValue" min="0">
+                                    </div>
+                                    <div class="range-input-reoup">
+                                        <label for="toValue">To</label>
+                                        <input type="number" name="toValue" id="toValue" min="0">
+                                    </div>
                                 </div>
                             </div>
                         </div>

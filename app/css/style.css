@@ -239,7 +239,6 @@ header .top-header .phones-list li span.custom-icon {
 .checkbox-group input[type="checkbox"] {
     display: none;
 }
-
 .checkbox-group label {
     font-size: 16px;
     color: #34404b;
@@ -464,4 +463,60 @@ header .top-header .phones-list li span.custom-icon {
 .category-wrap .item{
     margin-bottom: 30px;
 }
+
+.range{
+    margin-top: 40px;
+}
+.min-value, .max-value{
+    position: absolute;
+    top: -150%;
+    font-size: 14px;
+    color: #34404b;
+    font-family: 'Harmonia_semibold';
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+}
+.range .range-input-reoup input[type="number"]{
+    background-color: #edf0f2;
+}
+
+
+/* Product show page START */
+.product-wrap{
+    padding: 100px 125px;
+    background-color: #fff;
+}
+.product-carousel{
+    width: 330px;
+}
+.chose-size span{
+    margin-right: 40px;
+}
+
+
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio label{
+    font-size: 14px;
+    color: #34404b;
+    font-family: 'Harmonia_semibold';
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked + label{
+    font-size: 18px;
+    color: #ff5912;
+}
+.size-radio + .size-radio{
+    margin-left: 20px;
+}
+.order-form{
+    padding: 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+}
+
 /* ALL STYLES END */
