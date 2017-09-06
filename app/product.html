@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Product</title>
+    <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- JQuery UI Style -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- jQuery styles -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="css/font-awesome.css">
 
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,43 +31,29 @@
 <body>
 <!-- HEADER START -->
 <header>
-    <div class="top-header white-bg">
+    <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
                 <ul class="phones-list flex-container align-center">
                     <li class="flex-container align-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com
                     </li>
-                    <li class="flex-container align-center"><span class="custom-icon icon-phone-book-ic"></span>453 -
-                        5553 - 996
+                    <li class="flex-container align-center"><span class="custom-icon icon-phone-book-ic"></span> 996 -
+                        5553 - 453
                     </li>
                 </ul>
                 <nav class="social-nav">
-                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
                 </nav>
             </div>
         </div>
     </div>
-    <div class="bottom-header white-bg">
+    <div class="bottom-header">
         <div class="container">
-            <div class="flex-container justify-sp-between align-center">
-                <div class="logo">
-                    <a href=""><img src="img/logo.png" alt=""></a>
-                </div>
-                <nav class="header-nav">
-                    <a href="">Home</a>
-                    <a href="product.html">Products</a>
-                    <a href="">Hot Deals</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
-                </nav>
-                <nav class="user-controls">
-                    <a href=""><span class="custom-icon icon-search-ic"></span></a>
-                    <a href=""><span class="custom-icon icon-user-ic"></span></a>
-                    <a href=""><span class="custom-icon icon-cart-ic"><span class="basket-count">5</span></span></a>
-                </nav>
+            <div class="flex-container justify-sp-between">
+
             </div>
         </div>
     </div>
@@ -101,7 +86,7 @@
                     <div class="product-description">
                         <div class="order-info">
                             <div class="order-form">
-                                <form name="product-option" class="flex-container justify-sp-between">
+                                <form id="product-option" class="flex-container justify-sp-between">
                                     <div class="chose-size flex-container align-center">
                                         <span>Choose Size</span>
                                         <div class="size-radio-btn-group flex-container align-center">
@@ -129,7 +114,16 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="order-now"></div>
+                            <div class="order-now flex-container align-center justify-sp-between">
+                                <div class="product-price">
+
+                                </div>
+                                <ul class="product-share">
+
+                                </ul>
+                                <input type="submit" value="Order now" form="product-option"
+                                       class="btn btn-default btn-radius">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +139,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
-<script src="js/plugins.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
+<script src="js/plugins.min.js"></script>
 </body>
 </html>
