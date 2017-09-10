@@ -485,4 +485,59 @@ header .top-header .phones-list li span.custom-icon {
     border-bottom: 1px solid #edeff1;
 }
 
-/* ALL STYLES END */
+/*================= ALL STYLES END =================*/
+
+/*================= FOOTER STYLES START =================*/
+footer {
+    padding-top: 60px;
+    padding-bottom: 45px;
+    font-size: 14px;
+}
+footer .logo{
+    margin: 0 auto 0 0;
+}
+footer .logo span{
+    display: block;
+    margin-top: 20px;
+}
+.footer-nav nav{
+    display: inline-block;
+    vertical-align: text-top;
+    width: 170px;
+}
+.footer-nav nav + nav{
+    margin-left: 30px;
+}
+.footer-nav nav a::before{
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #34404b;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer-nav nav a{
+    display: block;
+}
+.footer-nav nav a + a {
+    margin-top: 15px;
+}
+.footer-nav nav a:hover{
+    color: #ff5912;
+}
+.footer-nav nav a:hover::before{
+    background-color: #ff5912;
+}
+.payment-methods{
+    margin-left: 30px;
+}
+.payment-methods span{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
+.payment-methods .methods-icons{
+    margin-top: 20px;
+}
+/*================= FOOTER STYLES END =================*/

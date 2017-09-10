@@ -10,6 +10,12 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <!-- jQuery styles -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+
+
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
@@ -29,8 +35,11 @@
         <div class="container">
             <div class="flex-container justify-sp-between">
                 <ul class="phones-list flex-container align-center">
-                    <li class="flex-container align-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com</li>
-                    <li class="flex-container align-center"><span class="custom-icon icon-phone-book-ic"></span>453 - 5553 - 996</li>
+                    <li class="flex-container align-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com
+                    </li>
+                    <li class="flex-container align-center"><span class="custom-icon icon-phone-book-ic"></span>453 -
+                        5553 - 996
+                    </li>
                 </ul>
                 <nav class="social-nav">
                     <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -69,16 +78,42 @@
 <main>
     <section class="items-carousel flex-container align-center">
         <div class="container">
-            <div class="items-carousel-description">
-                <div class="title big orange-text">
-                    <span>FULL WINTER KIT</span>
-                </div>
-                <span>Half Jacket + Skiny Trousers + Boot leather</span>
-                <span class="kit-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
-                <div class="price-wrapper">
-                    <span>Price : 120$</span>
-                    <a class="order-now" href=""><span class="custom-icon icon-cart-hover-ic"></span>Order Now</a>
-                </div>
+            <!-- todo change the name and in init-->
+            <div class="item-flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                                <span>FULL WINTER KIT</span>
+                            </div>
+                            <div class="item-carousel-text">
+                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                <span class="kit-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+                            </div>
+                            <div class="price-wrapper">
+                                <span>Price : 120$</span>
+                                <a class="order-now orange-text" href=""><span
+                                        class="custom-icon icon-cart-hover-ic"></span>Order Now</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                                <span>FULL WINTER KIT</span>
+                            </div>
+                            <div class="item-carousel-text">
+                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                <span class="kit-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+                            </div>
+                            <div class="price-wrapper">
+                                <span>Price : 120$</span>
+                                <a class="order-now orange-text" href=""><span
+                                        class="custom-icon icon-cart-hover-ic"></span>Order Now</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -101,7 +136,8 @@
                             </div>
                             <div class="item-description">
                                 <div class="item-title">
-                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track Jacket</a>
+                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track
+                                        Jacket</a>
                                 </div>
                                 <div class="item-price">
                                     <span>$100</span>
@@ -136,7 +172,8 @@
                             </div>
                             <div class="item-description">
                                 <div class="item-title">
-                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track Jacket</a>
+                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track
+                                        Jacket</a>
                                 </div>
                                 <div class="item-price">
                                     <span>$100</span>
@@ -171,7 +208,8 @@
                             </div>
                             <div class="item-description">
                                 <div class="item-title">
-                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track Jacket</a>
+                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track
+                                        Jacket</a>
                                 </div>
                                 <div class="item-price">
                                     <span>$100</span>
@@ -206,7 +244,8 @@
                             </div>
                             <div class="item-description">
                                 <div class="item-title">
-                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track Jacket</a>
+                                    <a href="">Reebok Track JReebok Track JacketReebok Track Jacketacket Reebok Track
+                                        Jacket</a>
                                 </div>
                                 <div class="item-price">
                                     <span>$100</span>
@@ -275,7 +314,8 @@
                         <form class="flex-container align-center">
                             <div class="subscribe-input-group">
                                 <label for="subscribeEmail" class="custom-icon icon-mail-ic"></label>
-                                <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="type your email here">
+                                <input type="email" class="subscribe-input" id="subscribeEmail"
+                                       placeholder="type your email here">
                             </div>
                             <button class="btn btn-default">join us</button>
                         </form>
@@ -288,13 +328,51 @@
 <!-- MAIN END -->
 
 <!-- FOOTER START -->
-<footer>
-
+<footer class="white-bg">
+    <div class="container">
+        <div class="flex-container justify-sp-between align-center">
+            <div class="logo">
+                <a href=""><img src="img/logo.png" alt=""></a>
+                <span>shopy c 2015 . your copy right here</span>
+            </div>
+            <div class="footer-nav">
+                <nav>
+                    <a href="">about us</a>
+                    <a href="">contact us</a>
+                    <a href="">support</a>
+                </nav>
+                <nav>
+                    <a href="">our feed</a>
+                    <a href="">terms and conditions</a>
+                    <a href="">our privacy</a>
+                </nav>
+                <nav>
+                    <a href="">join us</a>
+                    <a href="">live support</a>
+                </nav>
+            </div>
+            <div class="payment-methods">
+                <span class="orange-text">Payment Methods</span>
+                <div class="methods-icons">
+                    <a href=""><span class="custom-icon icon-amex-ic"></span></a>
+                    <a href=""><span class="custom-icon icon-no-name-cart-1-ic"></span></a>
+                    <a href=""><span class="custom-icon icon-visa-ic"></span></a>
+                    <a href=""><span class="custom-icon icon-master-cart-ic"></span></a>
+                    <a href=""><span class="custom-icon icon-no-name-cart-2-ic"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <!-- FOOTER END -->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/plugins.min.js"></script>
 </body>
 </html>
