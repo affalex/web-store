@@ -232,6 +232,37 @@ html[xmlns] .flexslider .slides {
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
+.item-flexslider .flex-control-nav{
+  bottom: auto;
+  transform: translateY(-50%);
+  width: auto;
+  left: 0;
+}
+.item-flexslider .flex-control-paging li{
+  margin: 0;
+  display: block;
+}
+.item-flexslider .flex-control-paging li + li{
+  margin-top: 10px;
+}
+.item-flexslider .flex-control-paging li a{
+  background: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  width: 10px;
+  height: 16px;
+  transition: all .3s linear;
+}
+.item-flexslider .flex-control-paging li a:hover{
+  background: #ff5912;
+}
+.item-flexslider .flex-control-paging li a.flex-active{
+  background: #ff5912;
+  height: 36px;
+}
+.item-flexslider .flex-direction-nav{
+  display: none;
+}
 .flex-control-thumbs {
   margin: 70px 0 0;
   position: static;
