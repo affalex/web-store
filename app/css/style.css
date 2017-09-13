@@ -134,8 +134,8 @@ label {
 .icon-add-to-cart-ic:hover {
     background-position: 0px -38px;
 }
-
 /* ============ HOVERS FOR ICONS END ============ */
+
 header .top-header {
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -219,6 +219,7 @@ header .top-header .phones-list li span.custom-icon {
     }
 }
 
+/* HOME PAGE START */
 /* CAROUSEL START */
 .item-flexslider{
     position: relative;
@@ -253,31 +254,35 @@ header .top-header .phones-list li span.custom-icon {
     padding: 60px 0;
 }
 
-.checkbox-group input[type="checkbox"] {
-    display: none;
+.items-carousel .item-carousel-text{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    color: #3c4751;
 }
-.checkbox-group label {
+.items-carousel .item-carousel-text span + span{
+    display: block;
+    margin-top: 15px;
+}
+.item-carousel-text .kit-description{
     font-size: 16px;
-    color: #34404b;
-    cursor: pointer;
+    font-family: 'Harmonia_regular';
+    color: #495662;
+}
+.items-carousel .price-wrapper{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    margin-top: 60px;
+}
+.items-carousel .price-wrapper .order-now{
+    margin-left: 25px;
 }
 
-.checkbox-group label::before {
-    content: '';
+.items-carousel .price-wrapper .order-now span{
     display: inline-block;
-    width: 13px;
-    height: 13px;
-    border: 4px solid #edf0f2;
-    background-color: #edf0f2;
-    margin-right: 13px;
+    margin-right: 8px;
 }
-
-.checkbox-group input[type="checkbox"]:checked + label {
+.items-carousel .price-wrapper .order-now:hover {
     color: #ff5912;
-}
-
-.checkbox-group input[type="checkbox"]:checked + label::before {
-    border-color: #ff5912;
 }
 
 .item {
@@ -404,6 +409,39 @@ header .top-header .phones-list li span.custom-icon {
     }
 }
 
+.show-more-dots{
+    margin-top: -20px;
+}
+.show-more-dots .dots-wraper{
+    display: block;
+    padding: 26px 0;
+}
+
+.show-more-dots span{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #ff5912;
+}
+
+.show-more-dots span + span{
+    margin-left: 5px;
+}
+
+.adv-area .adv-area-text{
+    padding: 30px 0;
+}
+.adv-area .adv-area-text .resolution{
+    display: block;
+    opacity: .4;
+    padding-top: 16px;
+    letter-spacing: .6em;
+}
+/* HOME PAGE END */
+
+
 .subscribe-form {
     padding: 37px 42px;
 }
@@ -474,6 +512,34 @@ header .top-header .phones-list li span.custom-icon {
     }
 }
 
+/* CATEGORIES PAGE START */
+.checkbox-group input[type="checkbox"] {
+    display: none;
+}
+.checkbox-group label {
+    font-size: 16px;
+    color: #34404b;
+    cursor: pointer;
+}
+
+.checkbox-group label::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edf0f2;
+    background-color: #edf0f2;
+    margin-right: 13px;
+}
+
+.checkbox-group input[type="checkbox"]:checked + label {
+    color: #ff5912;
+}
+
+.checkbox-group input[type="checkbox"]:checked + label::before {
+    border-color: #ff5912;
+}
+/* CATEGORIES PAGE END */
 /*======================*/
 .category-wrap {
     padding-top: 120px;
