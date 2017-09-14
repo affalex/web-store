@@ -222,6 +222,10 @@ header .top-header .phones-list li span.custom-icon {
     font-size: 36px;
     margin-bottom: 25px;
 }
+.title span span.orange-text{
+    display: inline-block;
+    margin-right: 10px;
+}
 
 .title.big {
     font-size: 52px;
@@ -402,8 +406,95 @@ header .top-header .phones-list li span.custom-icon {
     margin-left: 5px;
 }
 
+.kit {
+    padding: 17px 60px;
+    border: 1px solid #eaedef;
+}
+
+.sales-block {
+    position: relative;
+}
+
+.sales-block > div {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+}
+
+.sales-block div:first-child {
+    transform: rotate(-45deg);
+}
+
+.sales-block div:last-child {
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.sales-block .orange-bg .sale-details {
+    transform: rotate(-45deg);
+    text-align: center;
+    top: 20%;
+}
+
+.sales-block .sale-title {
+    display: block;
+    font-family: 'Harmonia_italic';
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.sales-block .sale-details {
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    color: #fff;
+}
+
+.kit-text{
+    border-right: 1px solid #f5f5f6;
+    margin: 10px 0;
+    padding-right: 35px;
+}
+
+.kit-text .sale-kit-title{
+    font-size: 22px;
+    font-family: 'Harmonia_black';
+    display: block;
+    margin-bottom: 10px;
+}
+.kit-text .sale-kit-description{
+    color: #495662;
+}
+.kit .add-to-basket{
+    margin: auto 0;
+}
+
+.kit .add-to-basket .sale-kit-price{
+    display: inline-block;
+    font-family: 'Harmonia_black';
+    font-size: 32px;
+    margin-left: 20px;
+}
+.kit .add-to-basket .sale-kit-price span{
+    font-size: 22px;
+}
+
+@media (max-width: 1199px){
+    .kit{
+        padding: 20px 25px;
+    }
+}
+.adv-area{
+    border: 1px solid #eaedef;
+}
 .adv-area .adv-area-text{
-    padding: 30px 0;
+    padding: 29px 0;
+}
+.adv-area .adv-area-text span.orange-text{
+    padding-left: 4px;
 }
 .adv-area .adv-area-text .resolution{
     display: block;
@@ -411,8 +502,6 @@ header .top-header .phones-list li span.custom-icon {
     padding-top: 16px;
     letter-spacing: .6em;
 }
-/* HOME PAGE END */
-
 
 .subscribe-form {
     padding: 37px 42px;
@@ -434,49 +523,17 @@ header .top-header .phones-list li span.custom-icon {
     min-width: 255px;
 }
 
+/* HOME PAGE END */
+
+
+
+
 /*li:hover::before /// footer links*/
 
 /* DEFAULT COMPONENTS END */
 
 /* ALL STYLES START */
-.kit {
-    padding: 10px 60px;
-}
 
-.sales-block {
-    position: relative;
-}
-
-.sales-block > div {
-    display: inline-block;
-    width: 50px;
-    height: 60px;
-}
-
-.sales-block div:first-child {
-    transform: rotate(-45deg);
-}
-
-.sales-block div:last-child {
-    transform: rotate(45deg);
-    position: absolute;
-    left: 0;
-}
-
-.sales-block .orange-bg .sale-details {
-    transform: rotate(-45deg);
-    text-align: center;
-}
-
-.sales-block .sale-title {
-    display: block;
-}
-
-@media (max-width: 1199px){
-    .kit{
-        padding: 20px 25px;
-    }
-}
 
 /* CATEGORIES PAGE START */
 .checkbox-group input[type="checkbox"] {
