@@ -570,23 +570,17 @@ header .top-header .phones-list li span.custom-icon {
     opacity: 0;
 }
 
-.best-sales-item:hover .bs-more-info-on-hover {
+.best-sales-item:hover .more-info-on-hover {
     opacity: 1;
 }
 
-.best-sales-item .bs-more-info-on-hover {
-    opacity: 0;
-    transition: all .3s linear;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    left: 50%;
+.best-sales-item .more-info-on-hover {
     bottom: 0;
-    transform: translateX(-50%);
-    padding-left: 28px;
+    padding: 0 0 0 28px;
+    text-align: center;
 }
 
-.best-sales-item .bs-more-info-on-hover a span.icon-add-to-cart-hover-ic {
+.best-sales-item .more-info-on-hover a span.icon-add-to-cart-hover-ic {
     display: inline-block;
     margin-right: 10px;
 }
