@@ -93,6 +93,22 @@ label {
     background-color: #ff5912;
 }
 
+.orange-btn {
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff5912;
+    border: none;
+    border-radius: 0;
+    width: 100px;
+    height: 50px;
+}
+
+.orange-btn:hover {
+    background-color: #ff8855;
+    color: #fff;
+}
+
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENTS START */
@@ -403,7 +419,7 @@ header .top-header .phones-list li span.custom-icon {
     margin-top: -20px;
 }
 
-.show-more-dots .dots-wraper {
+.show-more-dots .dots-wrapper {
     display: block;
     padding: 26px 0;
 }
@@ -418,6 +434,10 @@ header .top-header .phones-list li span.custom-icon {
 
 .show-more-dots span + span {
     margin-left: 5px;
+}
+
+.show-more-dots:hover .dots-wrapper span{
+    background-color: #ff8855;
 }
 
 .kit {
@@ -501,6 +521,10 @@ header .top-header .phones-list li span.custom-icon {
 
 .kit .add-to-basket .sale-kit-price span {
     font-size: 22px;
+}
+
+.kit .add-to-basket:hover .sale-kit-price{
+    color: #ff8855;
 }
 
 @media (max-width: 1199px) {
@@ -792,6 +816,9 @@ footer .logo span {
 
 .payment-methods .methods-icons {
     margin-top: 20px;
+}
+.payment-methods .methods-icons a:hover{
+    opacity: .5;
 }
 
 /*================= FOOTER STYLES END =================*/
