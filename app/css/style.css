@@ -861,6 +861,8 @@ header .top-header .phones-list li span.custom-icon {
 
 .chose-size {
     font-family: 'Harmonia_semibold';
+    padding-right: 85px;
+    border-right: 1px solid #f0f2f3;
 }
 
 .chose-size span {
