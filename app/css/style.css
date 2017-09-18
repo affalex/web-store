@@ -47,6 +47,15 @@ label {
     margin-bottom: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 /* RESET END */
 
 /* DEFAULT CLASSES START */
@@ -103,7 +112,7 @@ label {
     background-color: #ff5912;
 }
 
-.orange-btn {
+.btn-rectangle {
     font-family: 'Harmonia_semibold';
     font-size: 14px;
     color: #fff;
@@ -115,7 +124,24 @@ label {
     height: 50px;
 }
 
-.orange-btn:hover {
+.btn-rectangle:hover {
+    background-color: #ff8855;
+    color: #fff;
+}
+
+.btn-radius {
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff5912;
+    border: none;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    width: 135px;
+    height: 50px;
+}
+
+.btn-radius:hover {
     background-color: #ff8855;
     color: #fff;
 }
@@ -240,21 +266,6 @@ header .top-header .phones-list li span.custom-icon {
     }
 }
 
-/* HOME PAGE START */
-/* CAROUSEL START */
-.item-flexslider {
-    position: relative;
-    padding-left: -webkit-calc(8.333% + 30px);
-    padding-left: calc(8.333% + 30px);
-}
-
-.items-carousel {
-    min-height: 650px;
-    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
-    margin-bottom: 60px;
-}
-
-/* CAROUSEL END */
 .title {
     font-family: 'Harmonia_black';
     text-transform: uppercase;
@@ -275,7 +286,7 @@ header .top-header .phones-list li span.custom-icon {
     display: block;
     font-size: 16px;
     color: #495662;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .default-section {
@@ -325,7 +336,7 @@ header .top-header .phones-list li span.custom-icon {
     -o-transition: all .3s linear;
     transition: all .3s linear;
     text-align: center;
-    height: 372px;
+    height: 365px;
     position: relative;
 }
 
@@ -449,7 +460,7 @@ header .top-header .phones-list li span.custom-icon {
 
 .show-more-dots .dots-wrapper {
     display: block;
-    padding: 26px 0;
+    padding: 24px 0;
 }
 
 .show-more-dots span {
@@ -465,9 +476,62 @@ header .top-header .phones-list li span.custom-icon {
     margin-left: 5px;
 }
 
-.show-more-dots:hover .dots-wrapper span{
+.show-more-dots:hover .dots-wrapper span {
     background-color: #ff8855;
 }
+
+.subscribe-form {
+    padding: 37px 42px;
+}
+
+.subscribe-form .subscribe-description span:first-child {
+    font-size: 18px;
+    font-family: 'Harmonia_bold';
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.subscribe-form .subscribe-description span:last-child {
+    font-family: 'Harmonia_italic';
+    font-size: 14px;
+}
+
+.subscribe-input-group {
+    margin-right: 30px;
+}
+
+.subscribe-input-group label {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.subscribe-input {
+    color: #7c8791;
+    font-size: 14px;
+    font-family: 'Harmonia_italic';
+    min-width: 255px;
+}
+
+/* DEFAULT COMPONENTS END */
+
+/* ALL STYLES START */
+
+/* HOME PAGE STYLES START */
+/* CAROUSEL START */
+
+.item-flexslider {
+    position: relative;
+    padding-left: -webkit-calc(8.333% + 30px);
+    padding-left: calc(8.333% + 30px);
+}
+
+.items-carousel {
+    min-height: 650px;
+    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
+    margin-bottom: 60px;
+}
+
+/* CAROUSEL END */
 
 .kit {
     padding: 18px 55px 17px 70px;
@@ -558,7 +622,7 @@ header .top-header .phones-list li span.custom-icon {
     font-size: 22px;
 }
 
-.kit .add-to-basket:hover .sale-kit-price{
+.kit .add-to-basket:hover .sale-kit-price {
     color: #ff8855;
 }
 
@@ -629,6 +693,14 @@ header .top-header .phones-list li span.custom-icon {
     transition: all .3s linear;
 }
 
+.best-sales-item .bs-rate i.fa-star {
+    color: #e8ecf3;
+}
+
+.best-sales-item .bs-rate i.fa-star.active {
+    color: #ff5912;
+}
+
 .best-sales-item:hover .rate-price-wrapper {
     opacity: 0;
 }
@@ -648,35 +720,42 @@ header .top-header .phones-list li span.custom-icon {
     margin-right: 10px;
 }
 
-.subscribe-form {
-    padding: 37px 42px;
-}
-
-.subscribe-input-group {
-    margin-right: 30px;
-}
-
-.subscribe-input-group label {
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.subscribe-input {
-    color: #7c8791;
-    font-size: 14px;
-    font-family: 'Harmonia_italic';
-    min-width: 255px;
-}
-
-/* HOME PAGE END */
-
-/*li:hover::before /// footer links*/
-
-/* DEFAULT COMPONENTS END */
-
-/* ALL STYLES START */
+/* HOME PAGE STYLES END */
 
 /* CATEGORIES PAGE START */
+.category-wrap {
+    padding-top: 120px;
+}
+
+.aside-section {
+    padding: 40px;
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
+
+.aside-section + .aside-section {
+    margin-top: 30px;
+}
+
+.aside-section-title {
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    color: #ff5912;
+    margin-bottom: 40px;
+}
+
+.aside-section .category-types li + li {
+    margin-top: 30px;
+}
+
+.aside-section .category-types li:hover {
+    color: #ff5912;
+}
+
+.aside-section .checkbox-group + .checkbox-group {
+    margin-top: 30px;
+}
+
 .checkbox-group input[type="checkbox"] {
     display: none;
 }
@@ -705,33 +784,13 @@ header .top-header .phones-list li span.custom-icon {
     border-color: #ff5912;
 }
 
-/* CATEGORIES PAGE END */
-/*======================*/
-.category-wrap {
-    padding-top: 120px;
-}
-
-.aside-section {
-    padding: 40px;
-}
-
-.aside-section + .aside-section {
-    margin-top: 30px;
-}
-
-.aside-section-title {
-    font-family: 'Harmonia_black';
-    font-size: 18px;
-    color: #ff5912;
-    margin-bottom: 35px;
-}
-
-.category-wrap .item {
-    margin-bottom: 30px;
-}
+/*.aside-section .checkbox-group + .checkbox-group{*/
+/**/
+/*}*/
 
 .range {
-    margin-top: 40px;
+    padding-top: 35px;
+    font-size: 14px;
 }
 
 .min-value, .max-value {
@@ -746,22 +805,67 @@ header .top-header .phones-list li span.custom-icon {
     left: 50%;
 }
 
-.range .range-input-reoup input[type="number"] {
-    background-color: #edf0f2;
+.range .add-range-value {
+    margin-top: 35px;
 }
 
-/* Product show page START */
+.range .range-input-reoup label {
+    margin-right: 10px;
+}
+
+.range .range-input-reoup input[type="number"] {
+    background-color: #edf0f2;
+    width: 45px;
+    height: 25px;
+}
+
+.category-wrap .item {
+    margin-bottom: 30px;
+}
+
+.category-wrap .show-more-dots {
+    margin: 0 15px 60px 15px;
+}
+
+/* CATEGORIES PAGE END */
+
+/* PRODUCT SHOW PAGE START */
+
 .product-wrap {
     padding: 100px 125px;
     background-color: #fff;
+    margin-bottom: 60px;
+    border-top: 1px solid #edeff1;
 }
 
 .product-carousel {
     width: 330px;
 }
 
+.product-description .product-details span {
+    font-size: 18px;
+    color: #3c4751;
+    font-family: 'Harmonia_semibold';
+    display: block;
+    margin-bottom: 35px;
+}
+
+.product-description .product-details p {
+    color: #495662;
+    font-size: 16px;
+}
+
+.product-description .product-details p + p {
+    margin-top: 15px;
+}
+
+.chose-size {
+    font-family: 'Harmonia_semibold';
+}
+
 .chose-size span {
     margin-right: 40px;
+    font-size: 18px;
 }
 
 .size-radio input[type="radio"] {
@@ -770,8 +874,6 @@ header .top-header .phones-list li span.custom-icon {
 
 .size-radio label {
     font-size: 14px;
-    color: #34404b;
-    font-family: 'Harmonia_semibold';
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -785,11 +887,47 @@ header .top-header .phones-list li span.custom-icon {
     margin-left: 20px;
 }
 
+.quantity {
+    font-family: 'Harmonia_semibold';
+}
+
+.quantity span {
+    font-size: 18px;
+}
+
+.order-info {
+    margin-top: 40px;
+}
+
 .order-form {
     padding: 40px 0;
     border-top: 1px solid #edeff1;
     border-bottom: 1px solid #edeff1;
 }
+
+.order-info .product-price {
+    font-family: 'Harmonia_black';
+    font-size: 20px;
+    margin-right: auto;
+}
+
+.order-info .product-share li {
+    display: inline-block;
+}
+
+.order-info .product-share li + li {
+    margin-left: 30px;
+}
+
+.order-info .btn-radius {
+    margin-left: 25px;
+}
+
+.order-info .order-now {
+    margin-top: 40px;
+}
+
+/* PRODUCT SHOW PAGE END */
 
 /*================= ALL STYLES END =================*/
 
@@ -798,6 +936,12 @@ footer {
     padding-top: 60px;
     padding-bottom: 45px;
     font-size: 14px;
+    margin-top: 60px;
+}
+
+footer .footer-wrapper {
+    padding-top: 25px;
+    padding-bottom: 35px;
 }
 
 footer .logo {
@@ -859,7 +1003,8 @@ footer .logo span {
 .payment-methods .methods-icons {
     margin-top: 20px;
 }
-.payment-methods .methods-icons a:hover{
+
+.payment-methods .methods-icons a:hover {
     opacity: .5;
 }
 
