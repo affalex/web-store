@@ -784,10 +784,6 @@ header .top-header .phones-list li span.custom-icon {
     border-color: #ff5912;
 }
 
-/*.aside-section .checkbox-group + .checkbox-group{*/
-/**/
-/*}*/
-
 .range {
     padding-top: 35px;
     font-size: 14px;
@@ -817,6 +813,8 @@ header .top-header .phones-list li span.custom-icon {
     background-color: #edf0f2;
     width: 45px;
     height: 25px;
+    padding: 5px;
+    text-align: center;
 }
 
 .category-wrap .item {
@@ -825,6 +823,52 @@ header .top-header .phones-list li span.custom-icon {
 
 .category-wrap .show-more-dots {
     margin: 0 15px 60px 15px;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+    background: #edf0f2;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-right,
+.ui-corner-br,
+.ui-corner-bl,
+.ui-corner-tl,
+.ui-corner-tr {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+}
+
+.ui-slider-horizontal {
+    height: 3px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: #34404b;
+}
+
+.ui-slider .ui-slider-handle {
+    width: 11px;
+    height: 11px;
+}
+
+.range #slider-range span {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.ui-widget-header {
+    background: #34404b;
 }
 
 /* CATEGORIES PAGE END */
