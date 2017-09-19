@@ -102,36 +102,29 @@ input[type='number'] {
     background-color: #ff5912;
 }
 
-.btn-rectangle {
-    font-family: 'Harmonia_semibold';
-    font-size: 14px;
-    color: #fff;
+.btn-default {
+    line-height: normal;
     background-color: #ff5912;
     border: none;
     border-radius: 0;
-    width: 100px;
-    height: 50px;
+    color: #fff;
+    font-family: 'Harmonia_semibold';
 }
 
-.btn-rectangle:hover {
+.btn-default:hover {
     background-color: #ff8855;
     color: #fff;
+}
+
+.btn-rectangle {
+    font-size: 14px;
+    padding: 16px 30px;
 }
 
 .btn-radius {
-    font-family: 'Harmonia_semibold';
     font-size: 18px;
-    color: #fff;
-    background-color: #ff5912;
-    border: none;
     border-radius: 50px;
-    width: 135px;
-    height: 50px;
-}
-
-.btn-radius:hover {
-    background-color: #ff8855;
-    color: #fff;
+    padding: 16px 23px;
 }
 
 /* DEFAULT CLASSES END */
@@ -628,6 +621,7 @@ header .top-header .phones-list li span.custom-icon {
     display: inline-block;
     margin: auto 0;
     padding-right: 26px;
+    width: 40%;
 }
 
 .best-sales-item .bs-item-description {
@@ -638,6 +632,7 @@ header .top-header .phones-list li span.custom-icon {
     padding-left: 25px;
     position: relative;
     border-left: 1px solid #f5f5f6;
+    width: 60%;
 }
 
 .best-sales-item .bs-item-title {
@@ -894,6 +889,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .quantity span {
+    display: inline-block;
+    margin-right: 20px;
     font-size: 18px;
 }
 

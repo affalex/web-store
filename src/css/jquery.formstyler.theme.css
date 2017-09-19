@@ -1,55 +1,56 @@
 .jq-number {
 	position: relative;
 	vertical-align: middle;
-	padding: 0 38px;
+	padding: 0 12px;
 }
 .jq-number__field {
-	width: 60px;
-	border: 1px solid #CCC;
-	border-bottom-color: #B3B3B3;
-	border-radius: 4px;
-	box-shadow: inset 1px 1px #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
+	width: 35px;
+	/*border: 1px solid #CCC;*/
+	/*border-bottom-color: #B3B3B3;*/
+	/*border-radius: 4px;*/
+	/*box-shadow: inset 1px 1px #F1F1F1, 0 1px 2px rgba(0,0,0,.1);*/
 }
 .jq-number__field:hover {
-	border-color: #B3B3B3;
+	/*border-color: #B3B3B3;*/
+	color: #ff5912;
 }
 .jq-number__field input {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 8px 9px;
+	padding: 8px 0;
 	border: none;
 	outline: none;
 	background: none;
-	font: 14px Arial, sans-serif;
-	color: #333;
+	font: 18px 'Harmonia_semibold';
+	color: #ff5912;
 	text-align: center;
 }
 .jq-number__spin {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 32px;
-	height: 14px;
-	border: 1px solid #CCC;
-	border-bottom-color: #B3B3B3;
-	border-radius: 4px;
-	background: linear-gradient(#FFF, #E6E6E6);
-	box-shadow: 0 1px 2px rgba(0,0,0,.1);
-	box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+	width: 35px;
+	/*height: 14px;*/
+	/*border: 1px solid #CCC;*/
+	/*border-bottom-color: #B3B3B3;*/
+	/*border-radius: 4px;*/
+	/*background: linear-gradient(#FFF, #E6E6E6);*/
+	/*box-shadow: 0 1px 2px rgba(0,0,0,.1);*/
+	/*box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);*/
+	/*-webkit-user-select: none;*/
+	/*-moz-user-select: none;*/
+	/*-ms-user-select: none;*/
 	user-select: none;
-	text-shadow: 1px 1px #FFF;
+	/*text-shadow: 1px 1px #FFF;*/
 	cursor: pointer;
 }
 .jq-number__spin.minus {
-	top: auto;
-	bottom: 0;
+	right: 0;
+	left: auto;
 }
-.jq-number__spin:hover {
-	background: linear-gradient(#F6F6F6, #E6E6E6);
-}
+/*.jq-number__spin:hover {*/
+	/*background: linear-gradient(#F6F6F6, #E6E6E6);*/
+/*}*/
 .jq-number__spin:active {
 	background: #F5F5F5;
 	box-shadow: inset 1px 1px 3px #DDD;
@@ -81,18 +82,19 @@
 
 .jq-number__spin {
 	left: 0;
-	height: 32px;
+	height: 38px;
 }
 .jq-number__spin.plus {
-	right: 0;
-	left: auto;
+	/*top: auto;*/
+	bottom: 0;
 }
 .jq-number__spin:before {
 	content: '';
 	position: absolute;
-	top: 15px;
-	left: 10px;
-	width: 12px;
+	top: 50%;
+	/*left: 11px;*/
+	transform: translateY(-50%);
+	width: 10px;
 	height: 2px;
 	border: none;
 	background: #666;
@@ -101,10 +103,12 @@
 	display: none;
 }
 .jq-number__spin.plus:after {
-	top: 10px;
-	left: 15px;
+	top: 12px;
+	/*left: 15px;*/
+	top: 50%;
+	transform: translateY(-50%);
 	width: 2px;
-	height: 12px;
+	height: 10px;
 	border: none;
 	background: #666;
 }
