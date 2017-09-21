@@ -12,6 +12,7 @@
 
     <!-- JQuery UI Style -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/slicknav.css">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -29,7 +30,7 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header>
+<header class="header">
     <div class="top-header white-bg">
         <div class="container">
             <div class="flex-container justify-sp-between">
@@ -62,7 +63,7 @@
                     <a href="">About</a>
                     <a href="">Contact</a>
                 </nav>
-                <nav class="user-controls">
+                <nav class="user-controls flex-container">
                     <a href=""><span class="custom-icon icon-search-ic"></span></a>
                     <a href=""><span class="custom-icon icon-user-ic"></span></a>
                     <a href=""><span class="custom-icon icon-cart-ic"><span class="basket-count">5</span></span></a>
@@ -77,8 +78,12 @@
 <main>
     <div class="category-wrap">
         <div class="container">
+            <div class="mobile-sidebar-btn">
+                <i class="fa fa-arrow-circle-right"></i>
+            </div>
+            <div class="overlay"></div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12 mobile-sidebar-wrap">
                     <aside class="sidebar">
                         <div class="aside-section white-bg">
                             <div class="aside-section-title">
@@ -157,10 +162,10 @@
                         </div>
                     </aside>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-xs-12">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -196,8 +201,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -233,8 +238,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -272,8 +277,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -309,8 +314,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -346,8 +351,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -385,8 +390,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -422,8 +427,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -459,8 +464,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="item">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
                                 <div class="item-img">
                                     <a href="category.html">
                                         <img src="img/item-img-1.png" alt="">
@@ -578,5 +583,8 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
 </body>
 </html>

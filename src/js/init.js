@@ -1,4 +1,4 @@
-$( function() {
+$(function () {
 
     var fromInput = $('input[name="fromValue"]'),
         toInput = $('input[name="toValue"]'),
@@ -66,7 +66,7 @@ $( function() {
 
 
     // flexslider init
-    $(window).load(function() {
+    $(window).load(function () {
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: "thumbnails"
@@ -74,7 +74,7 @@ $( function() {
     });
 
     // flexslider home init
-    $(window).load(function() {
+    $(window).load(function () {
         $('.item-flexslider').flexslider({
             animation: "slide"
         });
@@ -85,8 +85,8 @@ $( function() {
 
     // slicknav init
     $('.header-nav').slicknav({
-        appendTo: "header .bottom-header .flex-container",
+        appendTo: "header .bottom-header .flex-container.justify-sp-between",
         label: ''
     });
 
-} );
+});

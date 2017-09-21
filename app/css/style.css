@@ -172,6 +172,9 @@ input[type='number'] {
 }
 
 /* ============ HOVERS FOR ICONS END ============ */
+.header {
+    position: relative;
+}
 
 header .top-header {
     border-bottom: 1px solid #edeff1;
@@ -259,6 +262,33 @@ header .top-header .phones-list li span.custom-icon {
     }
 }
 
+@media (max-width: 479px) {
+    header .bottom-header {
+        padding: 20px 0;
+        /*position: relative;*/
+    }
+
+    header .bottom-header .flex-container {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+
+    .user-controls {
+        width: 100%;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-top: 30px;
+    }
+
+}
+
 .title {
     font-family: 'Harmonia_black';
     text-transform: uppercase;
@@ -284,6 +314,57 @@ header .top-header .phones-list li span.custom-icon {
 
 .default-section {
     padding: 60px 0;
+}
+
+/* CAROUSEL START */
+
+.item-flexslider {
+    position: relative;
+    padding-left: -webkit-calc(8.333% + 30px);
+    padding-left: calc(8.333% + 30px);
+}
+.item-flexslider .carousel-indicators{
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: auto;
+    left: 0;
+    margin: 0;
+}
+.item-flexslider .carousel-indicators li {
+    background: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    width: 10px;
+    height: 16px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    display: block;
+    margin: 0;
+    border: none;
+}
+.item-flexslider .carousel-indicators li + li{
+    margin-top: 10px;
+}
+
+.item-flexslider .carousel-indicators .active {
+    background: #ff5912;
+    height: 36px;
+}
+
+.item-flexslider .carousel{
+    position: static;
+}
+
+.items-carousel {
+    min-height: 650px;
+    /* paddings instead of min-height adaptive*/
+    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
+    margin-bottom: 60px;
 }
 
 .items-carousel .item-carousel-text {
@@ -322,7 +403,9 @@ header .top-header .phones-list li span.custom-icon {
     color: #ff5912;
 }
 
-.item {
+/* CAROUSEL END */
+
+.product-item {
     background-color: #fff;
     padding: 30px 10px;
     -webkit-transition: all .3s linear;
@@ -333,12 +416,12 @@ header .top-header .phones-list li span.custom-icon {
     position: relative;
 }
 
-.item:hover {
+.product-item:hover {
     -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
-.item .item-img {
+.product-item .item-img {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
@@ -346,11 +429,11 @@ header .top-header .phones-list li span.custom-icon {
     height: 216px;
 }
 
-.item .item-img img {
+.product-item .item-img img {
     max-height: 100%;
 }
 
-.item:hover .item-img {
+.product-item:hover .item-img {
     height: 90px;
 }
 
@@ -358,7 +441,7 @@ header .top-header .phones-list li span.custom-icon {
     padding: 0 40px;
 }
 
-.item .item-title {
+.product-item .item-title {
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;
@@ -373,13 +456,13 @@ header .top-header .phones-list li span.custom-icon {
     color: #ff5912;
 }
 
-.item .item-price {
+.product-item .item-price {
     font-family: 'Harmonia_bold';
     font-size: 18px;
     color: #ff5912;
 }
 
-.item:hover .item-price {
+.product-item:hover .item-price {
     display: none;
 }
 
@@ -398,7 +481,7 @@ header .top-header .phones-list li span.custom-icon {
     padding: 0 50px;
 }
 
-.item:hover .more-info-on-hover {
+.product-item:hover .more-info-on-hover {
     opacity: 1;
 }
 
@@ -442,7 +525,7 @@ header .top-header .phones-list li span.custom-icon {
 }
 
 @media (max-width: 991px) {
-    .item {
+    .product-item {
         margin-bottom: 30px;
     }
 }
@@ -505,26 +588,28 @@ header .top-header .phones-list li span.custom-icon {
     min-width: 255px;
 }
 
+@media (max-width: 991px) {
+    .subscribe-form {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .subscribe-description {
+        margin-bottom: 30px;
+    }
+
+}
+
 /* DEFAULT COMPONENTS END */
 
 /* ALL STYLES START */
 
 /* HOME PAGE STYLES START */
-/* CAROUSEL START */
-
-.item-flexslider {
-    position: relative;
-    padding-left: -webkit-calc(8.333% + 30px);
-    padding-left: calc(8.333% + 30px);
-}
-
-.items-carousel {
-    min-height: 650px;
-    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
-    margin-bottom: 60px;
-}
-
-/* CAROUSEL END */
 
 .kit {
     padding: 18px 55px 17px 70px;
@@ -619,12 +704,6 @@ header .top-header .phones-list li span.custom-icon {
     color: #ff8855;
 }
 
-@media (max-width: 1199px) {
-    .kit {
-        padding: 20px 25px;
-    }
-}
-
 .adv-area {
     border: 1px solid #eaedef;
 }
@@ -642,6 +721,18 @@ header .top-header .phones-list li span.custom-icon {
     opacity: .4;
     padding-top: 16px;
     letter-spacing: .6em;
+}
+
+@media (max-width: 1199px) {
+    .kit {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .kit {
+        margin-bottom: 30px;
+    }
 }
 
 .best-sales-item {
@@ -715,11 +806,34 @@ header .top-header .phones-list li span.custom-icon {
     margin-right: 10px;
 }
 
+@media (max-width: 1199px) {
+    .best-sales-item {
+        padding: 0 10px;
+    }
+
+    .best-sales-item .bs-item-description, .best-sales-item .bs-item-img {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .best-sales-item .more-info-on-hover {
+        padding-left: 10px;
+    }
+}
+
 /* HOME PAGE STYLES END */
 
 /* CATEGORIES PAGE START */
 .category-wrap {
     padding-top: 120px;
+}
+
+.mobile-sidebar-btn {
+    width: 20px;
+    font-size: 30px;
+    color: #ff5912;
+    display: none;
+    margin-bottom: 20px;
 }
 
 .aside-section {
@@ -812,7 +926,7 @@ header .top-header .phones-list li span.custom-icon {
     text-align: center;
 }
 
-.category-wrap .item {
+.category-wrap .product-item {
     margin-bottom: 30px;
 }
 
@@ -864,6 +978,61 @@ html .ui-button.ui-state-disabled:active {
 
 .ui-widget-header {
     background: #34404b;
+}
+
+@media (max-width: 991px) {
+    .mobile-sidebar-btn {
+        display: inline-block;
+        z-index: 99;
+        position: relative;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    .mobile-sidebar-wrap {
+        position: absolute;
+        -webkit-transform: translateX(-120%);
+            -ms-transform: translateX(-120%);
+                transform: translateX(-120%);
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        z-index: 99;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        z-index: -1;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    main.show .mobile-sidebar-wrap {
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        left: 0;
+        right: 0;
+    }
+
+    main.show .overlay {
+        z-index: 98;
+        opacity: 1;
+    }
+
+    main.show .mobile-sidebar-btn {
+        -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+    }
 }
 
 /* CATEGORIES PAGE END */
