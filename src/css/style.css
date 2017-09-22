@@ -127,9 +127,23 @@ input[type='number'] {
     padding: 16px 23px;
 }
 
+.border {
+    border-right: 1px solid #f5f5f6;
+}
+
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENTS START */
+.default-section {
+    padding: 60px 0;
+}
+
+@media (max-width: 599px) {
+    .default-section {
+        padding: 30px 0;
+    }
+}
+
 .custom-icon {
     display: inline-block;
 }
@@ -245,6 +259,12 @@ header .top-header .phones-list li span.custom-icon {
     }
 }
 
+@media (max-width: 991px) {
+    .bottom-header .logo {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 479px) {
     header .bottom-header {
         padding: 20px 0;
@@ -287,8 +307,10 @@ header .top-header .phones-list li span.custom-icon {
     margin-bottom: 80px;
 }
 
-.default-section {
-    padding: 60px 0;
+@media (max-width: 599px) {
+    .title.big {
+        font-size: 30px;
+    }
 }
 
 /* CAROUSEL START */
@@ -372,6 +394,13 @@ header .top-header .phones-list li span.custom-icon {
 
 .items-carousel .price-wrapper .order-now:hover {
     color: #ff5912;
+}
+
+@media (max-width: 599px) {
+    .items-carousel {
+        min-height: 0;
+        padding: 150px 0
+    }
 }
 
 /* CAROUSEL END */
@@ -556,7 +585,28 @@ header .top-header .phones-list li span.custom-icon {
     .subscribe-description {
         margin-bottom: 30px;
     }
+}
 
+@media (max-width: 599px) {
+    .subscribe-form .subscribe-description span:first-child {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-form form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscribe-input-group {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .subscribe-form form .btn-rectangle {
+        width: 100%;
+    }
 }
 
 /* DEFAULT COMPONENTS END */
@@ -613,9 +663,12 @@ header .top-header .phones-list li span.custom-icon {
 }
 
 .kit-text {
-    border-right: 1px solid #f5f5f6;
     margin: auto 0 auto 70px;
     padding-right: 35px;
+}
+
+.kit .border {
+    height: 45px;
 }
 
 .kit-text .sale-kit-title {
@@ -673,13 +726,39 @@ header .top-header .phones-list li span.custom-icon {
 
 @media (max-width: 1199px) {
     .kit {
-        padding: 20px 25px;
+        padding: 17px 25px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .kit-text {
+        margin-left: 30px;
     }
 }
 
 @media (max-width: 991px) {
     .kit {
         margin-bottom: 30px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 599px) {
+    .kit {
+        padding: 15px;
+    }
+
+    .kit-text {
+        padding: 0px 10px 0 0;
+    }
+
+    .kit .add-to-basket {
+        padding: 0 0 0 10px;
+        margin: 0 auto;
+    }
+
+    .kit .add-to-basket .sale-kit-price {
+        font-size: 22px;
     }
 }
 
@@ -762,6 +841,34 @@ header .top-header .phones-list li span.custom-icon {
 
     .best-sales-item .more-info-on-hover {
         padding-left: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .best-sales-item {
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+
+    .best-sales-item .bs-item-img {
+        margin: 0;
+        width: auto;
+    }
+
+    .best-sales-item .border {
+        height: 60px;
+    }
+
+    .best-sales-item .bs-item-description {
+        margin: 0;
+        width: auto;
+        border: none;
+        font-size: 20px;
+    }
+
+    .best-sales-item .bs-item-title {
+        font-size: 22px;
     }
 }
 
@@ -1145,6 +1252,56 @@ footer .logo span {
 
 .payment-methods .methods-icons a:hover {
     opacity: .5;
+}
+
+@media (max-width: 1199px) {
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-nav nav + nav {
+        margin: 0;
+    }
+
+    .payment-methods {
+        margin: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 30px 0;
+    }
+
+    footer .footer-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .logo {
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+
+    .footer-nav {
+        width: 100%;
+        margin-bottom: 30px;
+        justify-content: space-around;
+    }
+
+    .footer-nav nav {
+        width: auto;
+    }
+
+    .payment-methods {
+        text-align: center;
+    }
+
+    .payment-methods span {
+        margin: 0 15px;
+    }
+
 }
 
 /*================= FOOTER STYLES END =================*/

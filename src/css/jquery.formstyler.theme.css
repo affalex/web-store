@@ -1,7 +1,7 @@
 .jq-number {
     position: relative;
     vertical-align: middle;
-    padding: 0 12px;
+    padding: 0 20px;
 }
 
 .jq-number__field {
@@ -28,7 +28,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 10px;
+    width: 20px;
     user-select: none;
     cursor: pointer;
 }
