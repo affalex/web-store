@@ -266,9 +266,22 @@ header .top-header .phones-list li span.custom-icon {
 }
 
 @media (max-width: 479px) {
+    .top-header-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top-header-wrap .phones-list {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .top-header .top-header-wrap .social-nav {
+        margin-top: 20px;
+    }
+
     header .bottom-header {
         padding: 20px 0;
-        /*position: relative;*/
     }
 
     header .bottom-header .flex-container {
@@ -281,7 +294,6 @@ header .top-header .phones-list li span.custom-icon {
         justify-content: center;
         margin-top: 30px;
     }
-
 }
 
 .title {
@@ -401,6 +413,40 @@ header .top-header .phones-list li span.custom-icon {
         min-height: 0;
         padding: 150px 0
     }
+}
+
+@media (max-width: 479px) {
+    .items-carousel-description {
+        text-align: center;
+    }
+
+    .item-flexslider {
+        padding-left: 0;
+    }
+
+    .item-flexslider .carousel-indicators {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 50px;
+    }
+
+    .item-flexslider .carousel-indicators li {
+        width: 16px;
+        height: 10px;
+        display: inline-block;
+    }
+
+    .item-flexslider .carousel-indicators li + li {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .item-flexslider .carousel-indicators li.active {
+        width: 36px;
+        height: 10px;
+    }
+
 }
 
 /* CAROUSEL END */
@@ -749,16 +795,39 @@ header .top-header .phones-list li span.custom-icon {
     }
 
     .kit-text {
-        padding: 0px 10px 0 0;
+        padding: 0;
     }
 
     .kit .add-to-basket {
-        padding: 0 0 0 10px;
-        margin: 0 auto;
+        padding: 0;
+        margin: 0;
     }
 
     .kit .add-to-basket .sale-kit-price {
         font-size: 22px;
+    }
+}
+
+@media (max-width: 479px) {
+    .kit {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .kit .sales-block {
+        margin-bottom: 20px;
+    }
+
+    .kit .kit-text {
+        width: 100%;
+    }
+
+    .kit .add-to-basket {
+        margin-top: 20px;
+    }
+
+    .kit .border {
+        display: none;
     }
 }
 
@@ -858,6 +927,7 @@ header .top-header .phones-list li span.custom-icon {
 
     .best-sales-item .border {
         height: 60px;
+        display: block;
     }
 
     .best-sales-item .bs-item-description {
@@ -869,6 +939,28 @@ header .top-header .phones-list li span.custom-icon {
 
     .best-sales-item .bs-item-title {
         font-size: 22px;
+    }
+}
+
+@media (max-width: 479px) {
+    .best-sales-item {
+        text-align: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .best-sales-item .bs-item-img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .best-sales-item .bs-item-title {
+        padding-bottom: 20px;
+    }
+
+    .best-sales-items .best-sales-item .border {
+        display: none;
     }
 }
 
@@ -1075,7 +1167,7 @@ html .ui-button.ui-state-disabled:active {
 /* PRODUCT SHOW PAGE START */
 
 .product-wrap {
-    padding: 100px 125px;
+    padding: 100px 0;
     background-color: #fff;
     margin-bottom: 60px;
     border-top: 1px solid #edeff1;
@@ -1300,6 +1392,30 @@ footer .logo span {
 
     .payment-methods span {
         margin: 0 15px;
+    }
+
+}
+
+@media (max-width: 479px) {
+    .footer-nav {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer-nav nav {
+        width: 100%;
+    }
+
+    .footer-nav nav a {
+        display: inline-block;
+    }
+
+    .footer-nav nav a + a {
+        margin-left: 20px;
+    }
+
+    .payment-methods span {
+        margin: 0 10px;
     }
 
 }
