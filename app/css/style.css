@@ -283,6 +283,10 @@ header .top-header .phones-list li span.custom-icon {
 }
 
 @media (max-width: 479px) {
+    header .top-header {
+        padding: 10px 0;
+    }
+
     .top-header-wrap {
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
@@ -355,6 +359,10 @@ header .top-header .phones-list li span.custom-icon {
 @media (max-width: 599px) {
     .title.big {
         font-size: 30px;
+    }
+
+    .title {
+        font-size: 25px;
     }
 }
 
@@ -456,7 +464,7 @@ header .top-header .phones-list li span.custom-icon {
 }
 
 @media (max-width: 479px) {
-    .items-carousel-description {
+    .carousel-inner .item .items-carousel-description {
         text-align: center;
     }
 
@@ -716,6 +724,16 @@ header .top-header .phones-list li span.custom-icon {
 
     .subscribe-form form .btn-rectangle {
         width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    .subscribe-form {
+        padding: 37px 22px
+    }
+
+    .subscribe-input {
+        min-width: 215px;
     }
 }
 
@@ -1304,8 +1322,6 @@ html .ui-button.ui-state-disabled:active {
 
 .chose-size {
     font-family: 'Harmonia_semibold';
-    padding-right: 85px;
-    border-right: 1px solid #f0f2f3;
 }
 
 .chose-size span {
@@ -1372,6 +1388,63 @@ html .ui-button.ui-state-disabled:active {
 
 .order-info .order-now {
     margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+    .product-description {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 599px) {
+    .product-wrap {
+        padding: 50px 0 30px 0;
+    }
+
+    .order-form {
+        padding: 30px 0 20px 0;
+    }
+
+    .order-form #product-option {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+
+    .order-form #product-option .border {
+        display: none;
+    }
+
+    .order-form .chose-size {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .order-now {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+
+    .order-now .product-share {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    .product-carousel {
+        width: 290px;
+    }
+
+    .flex-control-thumbs li {
+        width: 80px;
+    }
 }
 
 /* PRODUCT SHOW PAGE END */
