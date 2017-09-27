@@ -160,3 +160,139 @@ gulp.task('clear', function () {
 gulp.task('default', ['watch']);
 
 ```
+
+Default components and classes (style.css)
+==========================================
+
+###Default classes:
+Changes value of 'display' option to 'flex'
+```css
+.flex-container{}
+```
+Aligns flex items center 
+```css
+.align-center {}
+```
+Justifies flex items with equal distance between them
+```css
+.justify-sp-between {}
+```
+Changes value of color option to 'orange' color from the psd-template
+```css
+.orange-text {}
+```
+Changes value of background-color to 'red' color from the psd-template
+```css
+.red-bg {}
+```
+Changes value of background-color to 'black' color from the psd-template
+```css
+.black-bg {}
+```
+Changes value of background-color to 'blue' color from the psd-template
+```css
+.blue-bg {}
+```
+Changes value of background-color to 'green' color from the psd-template
+```css
+.green-bg {}
+```
+Changes value of background-color to white color from the psd-template
+```css
+.white-bg {}
+```
+Changes value of background-color to 'light orange' color from the psd-template
+```css
+.light-orange-bg {}
+```
+Changes value of background-color to 'orange' color from the psd-template
+```css
+.orange-bg {}
+```
+Creates button default styles:
+* resets line-height to 'normal' value;
+* sets orange background color;
+* removes borders;
+* removes border-radius;
+* sets white fonts color
+* sets Harmonia_semibold font family
+
+```css
+.btn-default {}
+```
+Changes background color on hover state to lighter orange and white font color 
+```css
+.btn-default:hover {}
+```
+Sets font size to 14px,  padding top/bottom to 16px and left/right to 30px
+```css
+.btn-rectangle {}
+```
+Sets font size to 18px, padding top/bottom to 16px and left/right 23px
+```css
+.btn-radius {}
+```
+Creates a grey side-border and aligns center vertically
+```css
+.border {}
+```
+###Defalts components:
+The wrap block of header. It has position relative option, consists of .top-header and .bottom-header
+```css
+.header {}
+```
+Section that contains email, phone and social links
+```css
+header .top-header {}
+```
+Section contains logo, navigation links and user-controls buttons
+```css
+.bottom-header{}
+```
+Default section on the page with padding top/bottom 60px and left/right 0px
+```css
+.default-section {}
+```
+Displays custom icons in line
+```css
+.custom-icon {}
+```
+Default title class on the page, with 'Harmonia_black' font, in uppercase state, font size is 36px and margin bottom is 25px 
+```css
+.title {}
+```
+Title with 52px font size 
+```css
+.title.big {}
+```
+Default subtitle on the page. Displays block, 16px font size and margin bottom is 80px
+```css
+.subtitle {
+    display: block;
+    font-size: 16px;
+    color: #495662;
+    margin-bottom: 80px;
+}
+```
+Block contains photo of the product, title and price.
+In hover state .more-info-on-hover{} appears. It's and additional info with available colors, share, like, and add to cart buttons
+```css
+.product-item {}
+```
+
+```css
+.product-item:hover {}
+```
+Button for showing more product items
+```css
+.show-more-dots {}
+```
+Section with input field for email and button 'Subscribe'
+```css
+.subscribe-form {}
+```
+Common footer section consists of logo, copy rights text, navigation links and section with payment methods 
+```css
+footer {}
+```
+
